@@ -17,7 +17,6 @@ namespace dropDownListTp
                 AddListItem(BulletedList1);
                 AddListItem(CheckBoxList1);
                 AddListItem(dropdownList1);
-
             }
         }
 
