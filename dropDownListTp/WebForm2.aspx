@@ -9,18 +9,30 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Languages de programmation maitrises"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Languages de programmation maitrises" ></asp:Label>
         </div>
-        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-            <asp:ListItem Text="Bac" Value="1"></asp:ListItem>
-            <asp:ListItem Text="Deug" Value="2"></asp:ListItem>
-            <asp:ListItem Text="Licence" Value="3"></asp:ListItem>
-            <asp:ListItem Text="Master" Value="4"></asp:ListItem>
-            <asp:ListItem Text="Doctort" Value="5"></asp:ListItem>
+        <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal">
+            <asp:ListItem Text="c++" Value="1"></asp:ListItem>
+            <asp:ListItem Text="c#" Value="2"></asp:ListItem>
+            <asp:ListItem Text="python" Value="3"></asp:ListItem>
+            <asp:ListItem Text="dart" Value="4"></asp:ListItem>
+            <asp:ListItem Text="java" Value="5"></asp:ListItem>
             
         </asp:CheckBoxList>
         <br />
+        
         <asp:Button ID="Button1"  runat="server" Text="Show" OnClick="Button1_Click"/>
+        <asp:RadioButtonList  ID="RadiobuttonList1" runat="server" RepeatDirection="Horizontal">
+            <asp:ListItem Text="c++" Value="1"></asp:ListItem>
+            <asp:ListItem Text="c#" Value="2"></asp:ListItem>
+            <asp:ListItem Text="python" Value="3"></asp:ListItem>
+            <asp:ListItem Text="dart" Value="4"></asp:ListItem>
+            <asp:ListItem Text="java" Value="5"></asp:ListItem>
+
+        </asp:RadioButtonList>
+        <br />
+        <asp:Button ID="Button2"  runat="server" Text="Submit" OnClick="Button2_Click" />
+        <asp:Button ID="Button3"  runat="server" Text="Clear Slection" OnClick="Button3_Click" />
     </form>
 </body>
 </html>

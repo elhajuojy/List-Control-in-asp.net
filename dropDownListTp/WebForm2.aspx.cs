@@ -26,5 +26,20 @@ namespace dropDownListTp
                 }
             }
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            RadiobuttonList1.SelectedIndex = -1; 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            if (RadiobuttonList1.SelectedIndex !=-1)
+            {
+                Response.Write("Text " + RadiobuttonList1.SelectedItem.Text + ",");
+                Response.Write("VaLue " + RadiobuttonList1.SelectedItem.Value + ",");
+                Response.Write("Index " + RadiobuttonList1.SelectedIndex.ToString() + "<br/>");
+            }
+        }
     }
 }
