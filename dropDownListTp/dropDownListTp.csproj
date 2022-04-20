@@ -68,13 +68,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Advertisement.xml" />
+    <Content Include="CalendarWebForm.aspx" />
     <Content Include="DropDownToXML.aspx" />
+    <Content Include="images\calendar-icon-png-4.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalendarWebForm.aspx.cs">
+      <DependentUpon>CalendarWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalendarWebForm.aspx.designer.cs">
+      <DependentUpon>CalendarWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DropDownToXML.aspx.cs">
       <DependentUpon>DropDownToXML.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -116,7 +125,6 @@
     <Content Include="XML Country List" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
