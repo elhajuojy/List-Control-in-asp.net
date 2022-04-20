@@ -13,8 +13,9 @@
             <asp:Button  ID="btnUpload" runat="server" OnClick="btnUpload_Click" Text="Upload"/>
             <br />
             <asp:Label ID="lblMessage" runat="server" Font-bold="true" > </asp:Label>
-            <asp:AdRotator  id="AdRotator1" runat="server" target="_blank" AdvertisementFile="~/Advertisement.xml"/>
+            
         </div>
     </form>
+    <asp:AdRotator  id="AdRotator1" runat="server" target="_blank" AdvertisementFile="~/Advertisement.xml"/>
 </body>
 </html>
